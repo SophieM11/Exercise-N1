@@ -1,0 +1,125 @@
+//exercise N1
+        /*Console.WriteLine("Enter Your name: ");
+        string name = Console.ReadLine();
+        
+        Console.WriteLine ("Your name is: " + name);*/
+      
+//exercise N2
+
+        /*int number1 = Convert.ToInt32(Console.ReadLine());
+        int number2 = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine ("Sum: " + (number1 + number2));
+        Console.WriteLine ("Deduction: " + (number1 - number2));
+        Console.WriteLine ("Multiplication: " + (number1 * number2));
+        Console.WriteLine ("Residual division: " + (number1 % number2));*/
+        
+//exercise N3
+         
+        /*int x = Convert.ToInt32(Console.ReadLine());
+        int y = Convert.ToInt32(Console.ReadLine()); 
+        
+        int z = x;
+        x = y;
+        y = z;
+        
+        Console.WriteLine ($"x = {x}");
+        Console.WriteLine ($"y = {y}"); */
+        
+//exercise N4
+        
+        /*int number1 = Convert.ToInt32(Console.ReadLine());
+        int number2 = Convert.ToInt32(Console.ReadLine());
+        int number3 = Convert.ToInt32(Console.ReadLine());
+        int number4 = Convert.ToInt32(Console.ReadLine());
+        
+        int number = (number1 + number2 + number3 + number4)/4;
+        
+        Console.WriteLine ("Average: " + number);*/
+
+//exercise N5
+
+        /*Console.WriteLine("Temperature in Kelvin: ");
+        double kelvin = Convert.ToDouble(Console.ReadLine());
+        double celsius = kelvin - 273.15;
+        
+        Console.WriteLine("Temperature in Celsius: " + celsius);*/
+        
+//exercise N6
+        
+        /*int number = Convert.ToInt32(Console.ReadLine());
+        
+        if (number > 0) {
+            Console.WriteLine("Number is positive");
+        } else if (number < 0) {
+            Console.WriteLine("Number is negative");
+        } else {
+            Console.WriteLine("Number is 0");
+        }*/
+
+//exercise N7
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        int num2 = Convert.ToInt32(Console.ReadLine());
+        int num3 = Convert.ToInt32(Console.ReadLine());
+        
+        if (num1 > num2 && num1 > num3){
+            Console.WriteLine("The largest number is: " + num1);
+        } else if (num2 > num1 && num2 > num3){
+            Console.WriteLine("The largest number is: " + num2);
+        } else {
+            Console.WriteLine("The largest number is: " + num3);
+        }
+        
+        if (num1 < num2 && num1 < num3){
+            Console.WriteLine("The smallest number is: " + num1);
+        } else if (num2 < num1 && num2 < num3){
+            Console.WriteLine("The smallest number is: " + num2);
+        } else {
+            Console.WriteLine("The smallest number is: " + num3);
+        }
+
+//exercise N8
+
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        int num2 = Convert.ToInt32(Console.ReadLine());
+      
+        
+        if (num1 == num2){
+            Console.WriteLine(3 * num1);
+            Console.WriteLine(3 * num2);
+        } else {
+             Console.WriteLine("Enter different numbers");
+        }
+
+//exercise N9
+
+        int num = Convert.ToInt32(Console.ReadLine());
+        
+        if (num % 7 == 0){
+            Console.WriteLine(num + " is divisible by 7");
+        } else {
+             Console.WriteLine(num + " isn't divisible by 7");
+        }
+
+//exercise N10
+
+      string number = Console.ReadLine();
+      bool booleanResult;
+      
+      booleanResult = number.Contains("5");
+      Console.WriteLine ($"Number Contains \"5\": {booleanResult}");
+
+
+//exercise N11
+
+        string number = Console.ReadLine();
+        string [] numberArray = new string[number.Length];
+        int counter = 0;
+
+        for (int i = 0; i < number.Length; i++){
+            numberArray[i] = number.Substring(counter, 1);
+            counter++;
+        }
+
+        Console.WriteLine(string.Join(" ", numberArray));
+ 
